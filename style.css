@@ -7,6 +7,17 @@ body, html {
   animation-timing-function:ease-in-out
 }
 
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+
 
 /*Added by me fade in*/
 @keyframes fade-in{
@@ -162,16 +173,16 @@ This code controls that cool parallax image and scrolling effect. Change the ima
 
 
 .parallax {
-    background-image: url("parallax.jpg");
+    background-image: url("lisp.jfif");
 
     /* Set a specific height */
-    height: 500px;
+    height: 600px;
 
     /* control the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -182,7 +193,7 @@ This code controls that cool parallax image and scrolling effect. Change the ima
 @media screen and (max-width: 768px) {
 	.parallax {
 		background-attachment: inherit;
-    height: 100px;
+        height: 320px;
 	}
 }
 
